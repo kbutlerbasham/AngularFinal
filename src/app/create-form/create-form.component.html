@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+        <label for="title">Title: </label>
+        <input type="text" placeholder="Title" name="title" required [(ngModel)]="model.title">
+    </div>
+    <div>
+        <label for="completionTime">Time to Complete: </label>
+        <input type="text" placeholder="Time to Complete" name="completionTime" required [(ngModel)]="model.completionTime">
+    </div>
+    <div>
+        <label for="itemsNeeded">Items Needed: </label>
+        <input type="text" placeholder="Items Needed" name="itemsNeeded" required [(ngModel)]="model.itemsNeeded">
+    </div>
+    <div>
+        <label for="description">Description: </label>
+        <textarea type="text" placeholder="Description" name="description" required [(ngModel)]="model.description"></textarea>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
